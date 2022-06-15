@@ -1,4 +1,5 @@
 import * as consulta from '../consultas.js'
+import * as principal from '../main.js'
 
 export function tituloDaTabela(){
     let titulo = document.querySelector('#titulo')
@@ -38,12 +39,19 @@ export function createLinePedidos(pedido){
     tdIdPedido.innerHTML = pedido.id 
     tdNomeCliente.innerHTML = consulta.getCliente(pedido.cliente).nome
     tdData.innerHTML = pedido.data 
-    tdValor.innerHTML = 'R$ ' + consulta.somaItensPedido(tdIdPedido.innerText)
+    tdValor.innerHTML = 'R$ ' + consulta.totalItensPedido(tdIdPedido.innerText)
 
     linha.appendChild(tdIdPedido)
     linha.appendChild(tdNomeCliente)
     linha.appendChild(tdData)
     linha.appendChild(tdValor)
 
+    //tdIdPedido.setAttribute('class','idPedido')
+    tdIdPedido.onclick=function(){principal.mainInfoPedidos(this.innerText)}
+
     return linha
 }
+
+// function getTdId(x){
+//     console.log(x.innerText)
+// }

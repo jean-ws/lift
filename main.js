@@ -12,15 +12,17 @@ function mainListaPedidos() {
     
     let index = 0
     Object.keys(listaDePedidos).forEach(pedido => {
-        let line = pedidos_lista.createLinePedidos(listaDePedidos[index])
-        table.appendChild(line)
+        let linha = pedidos_lista.createLinePedidos(listaDePedidos[index])
+        table.appendChild(linha)
         index += 1
     })
 }
 
-function mainInfoPedidos(idDoPedido) {
+export function mainInfoPedidos(idDoPedido) {
     
     let table = document.querySelector('#table')
+    table.innerHTML = ''
+
     let table2 = document.querySelector('#table2')
     
     let pedido = consulta.getPedido(idDoPedido)
@@ -33,7 +35,24 @@ function mainInfoPedidos(idDoPedido) {
 
     table.appendChild(info_tables.createTable1(cliente, dataDoPedido))
 
+    info_tables.criaTituloDaTabela2()
+    info_tables.headerDaTabela2()
+
+    let itensDoPedido = consulta.getItensPedido(idDoPedido)
+
+    let index = 0
+    Object.keys(itensDoPedido).forEach(item => {
+        let linha = info_tables.createTable2(itensDoPedido[index])
+        table2.appendChild(linha)
+        index += 1
+    })
+    
+    info_tables.totalDoPedido(idDoPedido)
 }
 
-let idDoPedido = 2
-mainInfoPedidos(idDoPedido)
+function main(){
+    mainListaPedidos()
+}
+
+
+main()

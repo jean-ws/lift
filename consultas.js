@@ -29,7 +29,7 @@ export function getPedido(idDoPedido){
     return pedido
 }
 
-export function somaItensPedido(pedido){
+export function totalItensPedido(pedido){
     let itensPedidos = getItensPedido(pedido)
     
     let totalPedido = 0

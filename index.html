@@ -7,39 +7,64 @@
     <style>
         body{
             font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-
+            font-size: x-large;
             text-align: center;
         }
         table {
             border: 2px solid black;
+            padding: 50px;
+            margin: 50px;
+            margin-top: 0px;
             table-layout: auto;
-            width: 800px;
+            width: auto;
             border-collapse: collapse;
             align-items: center;
+        }
+
+        thead {
+            border: 1px solid black;
+            background-color:lightgray;
+            text-align: left;
+        }
+
+        th {
+            padding: 25px;
+            padding-left: 100px;
+            padding-right: 100px;
         }
         tr {
             border: 1px solid black;
         }
+        tr#dadoscliente {
+            border: none;
+        }
         td {
-            padding: 15px;
+            padding: 25px;
         }
 
         div#titulos{
-            width: 800px;
+            margin: 50px;
+            margin-bottom: 25px;
+            width: auto;
             display: flex;
-            align-items: center;
         }
         div#titulo{
             width: 50%;
             display: flex;
             justify-content: left;
-            flex-wrap: wrap;
         }
         div#id_pedido{
             width: 50%;
             display: flex;
             justify-content: right;
-            flex-wrap: wrap;
+        }
+        div#titulo2{
+            margin: 50px;
+            margin-top: 100px;
+            margin-bottom: 25px;
+            width: auto;
+            display: flex;
+            justify-content: left;
         }
         
     </style>
@@ -64,6 +89,8 @@
         <thead id="header2"></thead>
         <tbody id="table2"></tbody>
     </table>
+
+    <div id="total"></div>
 
     <script type="module" src="main.js" ></script>
 </body>
