@@ -17,6 +17,18 @@ export function getItensPedido(pedido) {
     return itensPedidos
 }
 
+export function getCliente(idDoCliente){
+    let url = 'https://sistemalift1.com/lift_ps/api/Clientes/' + idDoCliente
+    let cliente = fazGetRequest(url)
+    return cliente
+}
+
+export function getPedido(idDoPedido){
+    let url = 'https://sistemalift1.com/lift_ps/api/Pedidos/' + idDoPedido
+    let pedido = fazGetRequest(url)
+    return pedido
+}
+
 export function somaItensPedido(pedido){
     let itensPedidos = getItensPedido(pedido)
     
@@ -30,10 +42,4 @@ export function somaItensPedido(pedido){
         totalPedido += totalProduto
     })
     return totalPedido
-}
-
-export function getCliente(idDoCliente){
-    let url = 'https://sistemalift1.com/lift_ps/api/Clientes/' + idDoCliente
-    let cliente = fazGetRequest(url)
-    return cliente
 }

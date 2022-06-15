@@ -27,7 +27,7 @@ export function headerDaTabela(){
 
 }
 
-export function createLinesPedidos(pedido){
+export function createLinePedidos(pedido){
     let linha = document.createElement('tr')
 
     let tdIdPedido = document.createElement('td')

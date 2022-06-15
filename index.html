@@ -23,19 +23,48 @@
         td {
             padding: 15px;
         }
+
+        div#titulos{
+            width: 800px;
+            display: flex;
+            align-items: center;
+        }
+        div#titulo{
+            width: 50%;
+            display: flex;
+            justify-content: left;
+            flex-wrap: wrap;
+        }
+        div#id_pedido{
+            width: 50%;
+            display: flex;
+            justify-content: right;
+            flex-wrap: wrap;
+        }
         
     </style>
     <title>Título do Documento</title>
 </head>
 <body>
-    <table>
-        <caption id="titulo"></caption>
 
+    <div id="titulos">
+        <div id="titulo"></div>
+        <div id="id_pedido"></div>
+    </div>
+
+    <table>
         <thead id="header"></thead>
 
         <tbody id="table"></tbody>
-
     </table>
+
+    <div id="titulo2"></div>
+
+    <table>
+        <thead id="header2"></thead>
+        <tbody id="table2"></tbody>
+    </table>
+
     <script type="module" src="main.js" ></script>
 </body>
 </html>
