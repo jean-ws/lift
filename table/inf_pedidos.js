@@ -96,5 +96,5 @@ export function createTable2(item){
 export function totalDoPedido(idDoPedido){
     let valor = consulta.totalItensPedido(idDoPedido)
     let total = document.querySelector('#total')
-    total.innerText = 'Total: R$ ' + valor
+    total.innerText = 'Total: R$ ' + valor.toLocaleString('pt-BR', {minimumFractionDigits: 2})
 }
