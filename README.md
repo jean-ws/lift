@@ -2,4 +2,4 @@
 
 Utiliza API do Sistema Lift para listar pedidos e criar tela com informações do pedido. 
 
-Tecnologias utilizaadas: Javascript, HTML e CSS
+Tecnologias utilizadas: Javascript, HTML e CSS
