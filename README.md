@@ -22,7 +22,9 @@ Suba o diretório  <code>/lift</code> em um server local para testes de desenvol
 
 ### 3. Abra o arquivo <code>index.html</code> 
 
-O arquivo <code>index.html</code> será carregado e listará os pedidos em uma tabela.
+Abra o arquivo <code>index.html</code> que, após ser carregado, listará os pedidos em uma tabela.
+
+Para fazer isto na extensão Live Server indicada, abra o arquivo <code>index.html</code> no Visual Studio Code e clique em <code>Go Live</code> na parte inferior da tela.
 
 ### 4. Ver informações do pedido.
 
