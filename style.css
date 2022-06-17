@@ -1,0 +1,99 @@
+body{
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: x-large;
+    text-align: center;
+}
+
+div#tudo {
+    padding: 50px;
+}
+
+div#tabela-1 {
+    margin: 100px;
+}
+div#tabela-2 {
+    margin: 100px;
+}
+
+table {
+    width: 100%;
+    border: 2px solid #F0F0FF;
+    table-layout: auto;
+    border-collapse: collapse;
+    align-items: center;
+}
+
+thead {
+    background-color: #F0F0FF;
+    text-align: center;
+}
+
+thead#header {
+    text-align: center;
+}
+
+th {
+    padding: 25px;
+    padding-left: 50px;
+    padding-right: 50px;
+    font-weight: 600;
+    font-size: 24px;
+    color: #1E1337;
+}
+
+tr {
+    border: 2px solid #F5F5FF;
+}
+tr#dadoscliente {
+    border: none;
+}
+td {
+    padding: 5px;
+    padding-top: 25px;
+    padding-bottom: 25px;
+    font-size: 18px;
+    font-weight: lighter;
+    color: #1E1337;
+}
+
+
+div#titulos{
+    width: 100%;
+    margin-bottom: 25px;
+    display: flex;
+    font-size: 32px;
+    color: #1E1337;
+}
+div#titulo{
+    width: 50%;
+    display: flex;
+    justify-content: left;
+    font-weight: bold;
+}
+div#id_pedido{
+    width: 50%;
+    display: flex;
+    justify-content: right;
+    font-size: 26px;
+}
+
+
+div#titulo2{
+    margin-top: 100px;
+    margin-bottom: 25px;
+    width: 100%;
+    display: flex;
+
+    justify-content: left;
+    font-weight: bold;
+    font-size: 32px;
+    color: #1E1337;
+}
+
+div#total {
+    padding: 50px;
+    text-align: right;
+    font-size: 32px;
+    color: #1E1337;
+    font-weight: 600;
+}
