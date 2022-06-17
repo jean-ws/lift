@@ -29,3 +29,7 @@ Para fazer isto na extensão Live Server indicada, abra o arquivo <code>index.ht
 ### 4. Ver informações do pedido.
 
 Para ver informações de algum pedido, clique sobre o número do pedido na primeira coluna da tabela e aguarde.
+
+### 5. Retornar à lista de pedidos.
+
+Para retornar à lista de pedidos atualize a página.
