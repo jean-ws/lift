@@ -14,12 +14,16 @@ Tecnologias utilizadas: Javascript, HTML e CSS.
   
   O diretório <code>/lift</code> será criado.
 
-### 2. Rode o arquivo <code>index.html</code> em um server local de desenvolvimento para testes (<code>localhost</code> ou <code>127.0.0.1</code>).
+### 2. Suba o diretório para um servidor local.
 
-É possível, por exemplo, utilizar a extensão <code>Live Server</code> no Visual Studio Code para fazer isto de forma fácil e rápida. É possível também fazer isto de outra forma, do modo que preferir.
+Suba o diretório  <code>/lift</code> em um server local para testes de desenvolvimento (<code>localhost</code> ou <code>127.0.0.1</code>). 
 
-### 3. Ver informações do pedido.
+É possível, por exemplo, utilizar a extensão [Live Server](https://marketplace.visualstudio.com/items?itemName=ritwickdey.LiveServer&ssr=false#overview) no Visual Studio Code para fazer isto de forma fácil e rápida. É possível também fazer isto de outras formas, do modo que preferir.
 
-Se você seguiu os passos anteriores. O arquivo <code>index.html</code> foi carregado e listou os pedidos. 
+### 3. Abra o arquivo <code>index.html</code> 
 
-Para ver informações de algum pedido, clique sobre o número do pedido nprimeira coluna da tabela e aguarde.
+O arquivo <code>index.html</code> será carregado e listará os pedidos em uma tabela.
+
+### 4. Ver informações do pedido.
+
+Para ver informações de algum pedido, clique sobre o número do pedido na primeira coluna da tabela e aguarde.
