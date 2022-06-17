@@ -39,7 +39,7 @@ export function createLinePedidos(pedido){
     tdIdPedido.innerHTML = pedido.id 
     tdNomeCliente.innerHTML = consulta.getCliente(pedido.cliente).nome
     tdData.innerHTML = pedido.data 
-    tdValor.innerHTML = 'R$ ' + consulta.totalItensPedido(tdIdPedido.innerText)
+    tdValor.innerHTML = 'R$ ' + consulta.totalItensPedido(tdIdPedido.innerText).toLocaleString('pt-BR', {minimumFractionDigits: 2})
 
     linha.appendChild(tdIdPedido)
     linha.appendChild(tdNomeCliente)
@@ -51,7 +51,3 @@ export function createLinePedidos(pedido){
 
     return linha
 }
-
-// function getTdId(x){
-//     console.log(x.innerText)
-// }

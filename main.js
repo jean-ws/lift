@@ -19,6 +19,8 @@ function mainListaPedidos() {
 }
 
 export function mainInfoPedidos(idDoPedido) {
+
+    console.log(idDoPedido)
     
     let table = document.querySelector('#table')
     table.innerHTML = ''
@@ -26,7 +28,7 @@ export function mainInfoPedidos(idDoPedido) {
     let table2 = document.querySelector('#table2')
     
     let pedido = consulta.getPedido(idDoPedido)
-    let cliente = consulta.getCliente(pedido.id)
+    let cliente = consulta.getCliente(pedido.cliente)
     let dataDoPedido = pedido.data
 
     info_tables.titulo1DaTabela()

@@ -81,7 +81,9 @@ export function createTable2(item){
     quantidade.innerText = item.quantidade
     
     let valor = document.createElement('td')
-    valor.innerText = 'R$' + consulta.getProduto(item.produto).valor
+    let valor_total_produto = (consulta.getProduto(item.produto).valor) * item.quantidade
+    valor.innerText = 'R$ ' + valor_total_produto.toLocaleString('pt-BR', {minimumFractionDigits: 2})
+
 
     linha.appendChild(codigo)
     linha.appendChild(nomeProduto)
@@ -94,5 +96,5 @@ export function createTable2(item){
 export function totalDoPedido(idDoPedido){
     let valor = consulta.totalItensPedido(idDoPedido)
     let total = document.querySelector('#total')
-    total.innerText = 'Total: R$' + valor
+    total.innerText = 'Total: R$ ' + valor
 }
