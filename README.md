@@ -1,4 +1,4 @@
-# Lift - processo seletivo
+# Lift - atividade técnica
 
 Utiliza API do Sistema Lift para listar pedidos e criar tela com informações do pedido. 
 
